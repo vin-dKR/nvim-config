@@ -2,11 +2,6 @@
 -- Load Packer
 vim.cmd [[packadd packer.nvim]]
 
--- LSP 
-local lspconfig = require('lspconfig')
-
--- nvim-cmp setup
-local cmp = require'cmp'
 
 require('packer').startup(function(use)
   -- Packer can manage itself
@@ -32,6 +27,12 @@ require('packer').startup(function(use)
   -- after this run command :PackerSync at last and all set
 end)
 
+
+-- LSP 
+local lspconfig = require('lspconfig')
+
+-- nvim-cmp setup
+local cmp = require'cmp'
 
 
 -- Set leader key
